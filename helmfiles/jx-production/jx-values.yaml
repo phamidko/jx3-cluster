@@ -21,7 +21,7 @@ jxRequirements:
     schedule: ""
   cluster:
     chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
-    clusterName: tf-jx-artistic-mole
+    clusterName: tf-jx-quick-tadpole
     devEnvApprovers:
     - todo
     environmentGitOwner: todo
@@ -41,13 +41,13 @@ jxRequirements:
   - key: staging
   - key: production
   ingress:
-    domain: 35.225.114.101.nip.io
-    externalDNS: false
+    domain: dev.phamid.page
+    externalDNS: true
     kind: ingress
     namespaceSubDomain: -jx-production.
     tls:
-      email: ""
-      enabled: false
+      email: philiphmaid2@gmail.com
+      enabled: true
       production: true
   kuberhealthy: true
   pipelineUser:
@@ -56,20 +56,20 @@ jxRequirements:
   secretStorage: gsm
   storage:
   - name: logs
-    url: gs://logs-tf-jx-artistic-mole-7dd8d919752e
+    url: gs://logs-tf-jx-quick-tadpole-810fe0607e2c
   - name: reports
-    url: gs://reports-tf-jx-artistic-mole-7dd8d919752e
+    url: gs://reports-tf-jx-quick-tadpole-810fe0607e2c
   - name: repository
-    url: gs://repository-tf-jx-artistic-mole-7dd8d919752e
+    url: gs://repository-tf-jx-quick-tadpole-810fe0607e2c
   vault: {}
   webhook: lighthouse
 jxRequirementsIngressExternalDNS:
-  enabled: false
+  enabled: true
 jxRequirementsIngressTLS:
-  enabled: false
+  enabled: true
 jxRequirementsKuberhealthy:
   enabled: true
 jxRequirementsTLSCheck:
-  enabled: false
+  enabled: true
 jxRequirementsVault:
   enabled: false

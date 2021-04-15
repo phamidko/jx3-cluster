@@ -38,13 +38,13 @@ spec:
             - -resync-interval
             - 60s
             - -archived-logs-url-template
-            - gs://logs-tf-jx-artistic-mole-7dd8d919752e/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.log
+            - gs://logs-tf-jx-quick-tadpole-810fe0607e2c/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.log
             - -archived-pipelines-url-template
-            - gs://logs-tf-jx-artistic-mole-7dd8d919752e/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.yaml
+            - gs://logs-tf-jx-quick-tadpole-810fe0607e2c/jenkins-x/logs/{{.Owner}}/{{.Repository}}/{{if hasPrefix .Branch "pr"}}{{.Branch | upper}}{{else}}{{.Branch}}{{end}}/{{.Build}}.yaml
             - -archived-pipelineruns-url-template
-            - gs://logs-tf-jx-artistic-mole-7dd8d919752e/jenkins-x/pipelineruns/{{.Namespace}}/{{.Name}}.yaml
+            - gs://logs-tf-jx-quick-tadpole-810fe0607e2c/jenkins-x/pipelineruns/{{.Namespace}}/{{.Name}}.yaml
             - -pipeline-trace-url-template
-            - http://grafana-jx-observability.35.225.114.101.nip.io/explore?left=%5B%22now%22,%22now%22,%22Tempo%22,%7B%22query%22:%22{{.TraceID}}%22%7D%5D
+            - http://grafana-jx-observability.dev.phamid.page/explore?left=%5B%22now%22,%22now%22,%22Tempo%22,%7B%22query%22:%22{{.TraceID}}%22%7D%5D
             - -log-level
             - INFO
           ports:

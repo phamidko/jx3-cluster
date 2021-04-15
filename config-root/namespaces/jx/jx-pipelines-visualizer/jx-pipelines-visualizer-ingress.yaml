@@ -17,9 +17,13 @@ metadata:
   namespace: jx
 spec:
   rules:
-    - host: dashboard-jx.35.225.114.101.nip.io
+    - host: dashboard-jx.dev.phamid.page
       http:
         paths:
           - backend:
               serviceName: jx-pipelines-visualizer
               servicePort: http
+  tls:
+    - secretName: tls-dev-phamid-page-p
+      hosts:
+        - dashboard-jx.dev.phamid.page

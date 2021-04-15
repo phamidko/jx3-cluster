@@ -23,5 +23,5 @@ metadata:
     app.kubernetes.io/part-of: tekton-pipelines
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
-    iam.gke.io/gcp-service-account: tf-jx-artistic-mole-tekton@jenkin-307611.iam.gserviceaccount.com
+    iam.gke.io/gcp-service-account: tf-jx-quick-tadpole-tekton@jenkin-307611.iam.gserviceaccount.com
 secrets:

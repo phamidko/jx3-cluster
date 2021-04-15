@@ -6,7 +6,7 @@ spec:
     schedule: ""
   cluster:
     chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
-    clusterName: tf-jx-artistic-mole
+    clusterName: tf-jx-quick-tadpole
     devEnvApprovers:
     - todo
     environmentGitOwner: todo
@@ -26,13 +26,13 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: 35.225.114.101.nip.io
-    externalDNS: false
+    domain: dev.phamid.page
+    externalDNS: true
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
-      email: "philiphamid2@gmail.com"
-      enabled: false
+      email: philiphmaid2@gmail.com
+      enabled: true
       production: true
   kuberhealthy: true
   pipelineUser:
@@ -41,10 +41,10 @@ spec:
   secretStorage: gsm
   storage:
   - name: logs
-    url: gs://logs-tf-jx-artistic-mole-7dd8d919752e
+    url: gs://logs-tf-jx-quick-tadpole-810fe0607e2c
   - name: reports
-    url: gs://reports-tf-jx-artistic-mole-7dd8d919752e
+    url: gs://reports-tf-jx-quick-tadpole-810fe0607e2c
   - name: repository
-    url: gs://repository-tf-jx-artistic-mole-7dd8d919752e
+    url: gs://repository-tf-jx-quick-tadpole-810fe0607e2c
   vault: {}
   webhook: lighthouse

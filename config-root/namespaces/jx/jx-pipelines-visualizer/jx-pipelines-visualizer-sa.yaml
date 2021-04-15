@@ -11,5 +11,5 @@ metadata:
     app.kubernetes.io/managed-by: "Helm"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
-    iam.gke.io/gcp-service-account: tf-jx-artistic-mole-jxui@jenkin-307611.iam.gserviceaccount.com
+    iam.gke.io/gcp-service-account: tf-jx-quick-tadpole-jxui@jenkin-307611.iam.gserviceaccount.com
   namespace: jx

@@ -16,4 +16,8 @@ spec:
               serviceName: nexus
               servicePort: 80
             path: "/"
-      host: nexus-jx.35.225.114.101.nip.io
+      host: nexus-jx.dev.phamid.page
+  tls:
+    - hosts:
+        - nexus-jx.dev.phamid.page
+      secretName: "tls-dev-phamid-page-p"

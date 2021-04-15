@@ -40,7 +40,7 @@ spec:
     versionStreamRef: "master"
     useGitOps: true
     storageLocations:
-      - bucketUrl: gs://logs-tf-jx-artistic-mole-7dd8d919752e
+      - bucketUrl: gs://logs-tf-jx-quick-tadpole-810fe0607e2c
         classifier: logs
-      - bucketUrl: gs://reports-tf-jx-artistic-mole-7dd8d919752e
+      - bucketUrl: gs://reports-tf-jx-quick-tadpole-810fe0607e2c
         classifier: reports
