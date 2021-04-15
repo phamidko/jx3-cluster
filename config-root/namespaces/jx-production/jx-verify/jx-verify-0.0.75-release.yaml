@@ -1,0 +1,38 @@
+# Source: jx-verify/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-04-02T06:18:15Z"
+  deletionTimestamp: null
+  name: 'jx-verify-0.0.75'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      branch: master
+      committer:
+        email: james.strachan@gmail.com
+        name: James Strachan
+      message: |
+        chore: upgrade deps
+      sha: e3bff25b8f51f1297256eff50e9e44ecab291605
+    - author:
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      branch: master
+      committer:
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      message: |
+        chore: move to plugins org
+      sha: a7007f1cde0427fb53ac14ecd5653f4efe62ab5c
+  gitHttpUrl: https://github.com/jenkins-x-plugins/jx-verify
+  gitOwner: jenkins-x-plugins
+  gitRepository: jx-verify
+  name: 'jx-verify'
+  version: 0.0.75
+status: {}

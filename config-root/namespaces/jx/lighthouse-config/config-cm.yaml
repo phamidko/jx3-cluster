@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - phamidko/jx3-cluster
-      target_url: http://dashboard-jx.
+      target_url: http://dashboard-jx.35.225.114.101.nip.io
 kind: ConfigMap
 metadata:
   creationTimestamp: null
