@@ -31,7 +31,7 @@ spec:
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
-      email: ""
+      email: "philiphamid2@gmail.com"
       enabled: false
       production: true
   kuberhealthy: true
