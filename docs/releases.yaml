@@ -11,13 +11,14 @@
     - kube-lego
     - letsencrypt
     - tls
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-artistic-mole%2Fnamespace_name%2Fcert-manager%2Fcontainer_name%2Fcert-manager&dateRangeUnbound=both
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-quick-tadpole%2Fnamespace_name%2Fcert-manager%2Fcontainer_name%2Fcert-manager&dateRangeUnbound=both
     maintainers:
     - email: james@jetstack.io
       name: munnerz
     name: cert-manager
     repositoryName: jetstack
     repositoryUrl: https://charts.jetstack.io
+    resourcePath: config-root/namespaces/cert-manager/cert-manager
     sources:
     - https://github.com/jetstack/cert-manager
     version: 1.1.0
@@ -29,7 +30,7 @@
       This chart deletes any pods which can't load their images to work around timing issues with Workload Identity and preview environments
     home: https://github.com/jenkins-x/jx-verify
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-artistic-mole%2Fnamespace_name%2Fjx-production%2Fcontainer_name%2Fjx-verify&dateRangeUnbound=both
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-quick-tadpole%2Fnamespace_name%2Fjx-production%2Fcontainer_name%2Fjx-verify&dateRangeUnbound=both
     name: jx-verify
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
@@ -42,7 +43,7 @@
       This chart deletes any pods which can't load their images to work around timing issues with Workload Identity and preview environments
     home: https://github.com/jenkins-x/jx-verify
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-artistic-mole%2Fnamespace_name%2Fjx-staging%2Fcontainer_name%2Fjx-verify&dateRangeUnbound=both
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-quick-tadpole%2Fnamespace_name%2Fjx-staging%2Fcontainer_name%2Fjx-verify&dateRangeUnbound=both
     name: jx-verify
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
@@ -67,13 +68,14 @@
     - external-dns
     - network
     - dns
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-artistic-mole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fexternal-dns&dateRangeUnbound=both
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-quick-tadpole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fexternal-dns&dateRangeUnbound=both
     maintainers:
     - email: containers@bitnami.com
       name: Bitnami
     name: external-dns
     repositoryName: bitnami
     repositoryUrl: https://charts.bitnami.com/bitnami
+    resourcePath: config-root/namespaces/jx/external-dns
     sources:
     - https://github.com/kubernetes-sigs/external-dns
     - https://github.com/bitnami/bitnami-docker-external-dns
@@ -82,7 +84,7 @@
   - apiVersion: v1
     description: Acme
     icon: https://avatars2.githubusercontent.com/u/35583233?s=200&v=4
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-artistic-mole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Facme&dateRangeUnbound=both
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-quick-tadpole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Facme&dateRangeUnbound=both
     name: acme
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
@@ -93,12 +95,12 @@
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
     ingresses:
     - name: chartmuseum
-      url: http://chartmuseum-jx.35.225.114.101.nip.io/
+      url: https://chartmuseum-jx.dev.phamid.page
     - name: hook
-      url: http://hook-jx.35.225.114.101.nip.io/hook
+      url: https://hook-jx.dev.phamid.page
     - name: nexus
-      url: http://nexus-jx.35.225.114.101.nip.io/
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-artistic-mole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjxboot-helmfile-resources&dateRangeUnbound=both
+      url: https://nexus-jx.dev.phamid.page
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-quick-tadpole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjxboot-helmfile-resources&dateRangeUnbound=both
     name: jxboot-helmfile-resources
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
@@ -108,7 +110,7 @@
     appVersion: 3.0.5
     description: Custom Resource Definitions for Jenkins X
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/go.png
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-artistic-mole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjenkins-x-crds&dateRangeUnbound=both
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-quick-tadpole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjenkins-x-crds&dateRangeUnbound=both
     name: jenkins-x-crds
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
@@ -116,14 +118,14 @@
     version: 3.0.5
   - apiVersion: v1
     appVersion: latest
-    applicationUrl: http://dashboard-jx.35.225.114.101.nip.io
+    applicationUrl: https://dashboard-jx.dev.phamid.page
     description: Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.
     home: https://github.com/jenkins-x/jx-pipelines-visualizer
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
     ingresses:
     - name: jx-pipelines-visualizer
-      url: http://dashboard-jx.35.225.114.101.nip.io
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-artistic-mole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-pipelines-visualizer&dateRangeUnbound=both
+      url: https://dashboard-jx.dev.phamid.page
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-quick-tadpole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-pipelines-visualizer&dateRangeUnbound=both
     name: jx-pipelines-visualizer
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
@@ -135,7 +137,7 @@
     description: 'This chart installs the jx-preview CRD and garbagecollection job '
     home: https://github.com/jenkins-x-plugins/jx-preview
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-artistic-mole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-preview&dateRangeUnbound=both
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-quick-tadpole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-preview&dateRangeUnbound=both
     name: jx-preview
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
@@ -145,7 +147,7 @@
     description: 'This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '
     home: https://github.com/jenkins-x/lighthouse
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-artistic-mole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Flighthouse&dateRangeUnbound=both
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-quick-tadpole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Flighthouse&dateRangeUnbound=both
     name: lighthouse
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
@@ -155,7 +157,7 @@
     description: A Helm chart for Kubernetes
     home: https://github.com/jenkins-x-charts/nexus
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/master/jenkins-x-platform/images/nexus.png
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-artistic-mole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fnexus&dateRangeUnbound=both
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-quick-tadpole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fnexus&dateRangeUnbound=both
     name: nexus
     repositoryName: jenkins-x
     repositoryUrl: https://storage.googleapis.com/chartmuseum.jenkins-x.io
@@ -171,7 +173,7 @@
     - chartmuseum
     - helm
     - charts repo
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-artistic-mole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fchartmuseum&dateRangeUnbound=both
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-quick-tadpole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fchartmuseum&dateRangeUnbound=both
     name: chartmuseum
     repositoryName: stable
     repositoryUrl: https://charts.helm.sh/stable
@@ -182,7 +184,7 @@
     description: Jenkins X next gen cloud CI / CD platform for Kubernetes
     home: https://jenkins-x.io/
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-artistic-mole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-build-controller&dateRangeUnbound=both
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-quick-tadpole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-build-controller&dateRangeUnbound=both
     maintainers:
     - email: jenkins-x@googlegroups.com
       name: Jenkins X Team
@@ -198,7 +200,7 @@
     description: Jenkins X next gen cloud CI / CD platform for Kubernetes
     home: https://jenkins-x.io/
     icon: https://jenkins-x.github.io/jenkins-x-website/img/profile.png
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-artistic-mole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-kh-check&dateRangeUnbound=both
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-quick-tadpole%2Fnamespace_name%2Fjx%2Fcontainer_name%2Fjx-kh-check&dateRangeUnbound=both
     maintainers:
     - email: jenkins-x@googlegroups.com
       name: Jenkins X Team
@@ -217,13 +219,14 @@
     description: Jenkins X next gen cloud CI / CD platform for Kubernetes
     home: https://jenkins-x.io/
     icon: https://jenkins-x.github.io/jenkins-x-website/img/profile.png
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-artistic-mole%2Fnamespace_name%2Fkuberhealthy%2Fcontainer_name%2Fkh-tls-check&dateRangeUnbound=both
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-quick-tadpole%2Fnamespace_name%2Fkuberhealthy%2Fcontainer_name%2Fkh-tls-check&dateRangeUnbound=both
     maintainers:
     - email: jenkins-x@googlegroups.com
       name: Jenkins X Team
     name: kh-tls-check
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
+    resourcePath: config-root/namespaces/kuberhealthy/kh-tls-check
     sources:
     - https://github.com/jenkins-x-plugins/kh-tls-check
     version: 0.0.8
@@ -242,7 +245,7 @@
     - ingress
     - nginx
     kubeVersion: '>=1.16.0-0'
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-artistic-mole%2Fnamespace_name%2Fnginx%2Fcontainer_name%2Fingress-nginx&dateRangeUnbound=both
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-quick-tadpole%2Fnamespace_name%2Fnginx%2Fcontainer_name%2Fingress-nginx&dateRangeUnbound=both
     maintainers:
     - name: ChiefAlexander
     name: ingress-nginx
@@ -263,7 +266,7 @@
     keywords:
     - kubernetes-external-secrets
     - secrets
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-artistic-mole%2Fnamespace_name%2Fsecret-infra%2Fcontainer_name%2Fkubernetes-external-secrets&dateRangeUnbound=both
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-quick-tadpole%2Fnamespace_name%2Fsecret-infra%2Fcontainer_name%2Fkubernetes-external-secrets&dateRangeUnbound=both
     maintainers:
     - name: external-secrets
       url: https://github.com/external-secrets
@@ -281,7 +284,7 @@
     keywords:
     - wave
     - kubernetes
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-artistic-mole%2Fnamespace_name%2Fsecret-infra%2Fcontainer_name%2Fpusher-wave&dateRangeUnbound=both
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-quick-tadpole%2Fnamespace_name%2Fsecret-infra%2Fcontainer_name%2Fpusher-wave&dateRangeUnbound=both
     name: pusher-wave
     repositoryName: jx3
     repositoryUrl: https://storage.googleapis.com/jenkinsxio/charts
@@ -297,7 +300,7 @@
     description: A Helm chart for Tekton Pipelines
     home: https://github.com/cdfoundation/tekton-helm-chart
     icon: https://avatars2.githubusercontent.com/u/47602533
-    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-artistic-mole%2Fnamespace_name%2Ftekton-pipelines%2Fcontainer_name%2Ftekton-pipeline&dateRangeUnbound=both
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=jenkin-307611&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-quick-tadpole%2Fnamespace_name%2Ftekton-pipelines%2Fcontainer_name%2Ftekton-pipeline&dateRangeUnbound=both
     name: tekton-pipeline
     repositoryName: cdf
     repositoryUrl: https://cdfoundation.github.io/tekton-helm-chart
